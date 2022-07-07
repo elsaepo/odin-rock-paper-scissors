@@ -1,4 +1,5 @@
 let moveSet = ["rock", "paper", "scissors"];
+let outputDiv = document.getElementById("resultText");
 
 function computerPlay(){
     return moveSet[Math.floor(Math.random()*3)];
@@ -6,19 +7,19 @@ function computerPlay(){
 
 function gameRound(playerSelection, computerSelection){
     if(playerSelection === computerSelection){
-        alert(`It's a draw! ${playerSelection} and ${computerSelection} are equally matched.`);
+        outputDiv.innerHTML = `It's a draw! ${playerSelection} and ${computerSelection} are equally matched.`;
         return "draw";
     } else if (playerSelection === "rock" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "rock"){
-        alert(`You lose! ${computerSelection} beats ${playerSelection}`);
+        outputDiv.innerHTML = `You lose! ${computerSelection} beats ${playerSelection}`;
         return "computerVictory";
     } else {
-        alert(`Winner winner! ${playerSelection} beats ${computerSelection}`);
+        outputDiv.innerHTML = `Winner winner! ${playerSelection} beats ${computerSelection}`;
         return "playerVictory";
     }
 }
 
 
-function game(){
+/*function game(){
     let playerScore = 0;
     let computerScore = 0;
     let currentRound = 0;
@@ -47,8 +48,16 @@ function game(){
         alert(`${finaleString} the computer is the winner. Don't feel too bad, you only lost to a machine that can't think.`)
     }
     
-}
+}*/
 
-document.getElementById("gameButton").addEventListener("click", function(){
-    game();
+
+
+document.getElementById("rock").addEventListener("click", function(){
+    gameRound("rock", computerPlay());
+});
+document.getElementById("paper").addEventListener("click", function(){
+    gameRound("paper", computerPlay());
+});
+document.getElementById("scissors").addEventListener("click", function(){
+    gameRound("scissors", computerPlay());
 });
