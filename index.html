@@ -1,20 +1,47 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Rock Paper Scissors</title>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
+
+<head>
+    <title>Rock Paper Scissors</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
 <body>
-
-<h1>Rock Paper Scissors</h1>
-<p>Pick your move:</p>
-<button id="rock">Rock</button>
-<button id="paper">Paper</button>
-<button id="scissors">Scissors</button>
-<div id="resultText"></div>
+    <section id="page-container">
+        <div id="game-container">
+            <h1>Rock Paper Scissors</h1>
+            <h2 id="headerText">Choose wisely...</h2>
+            <p id="resultText">First to 5 points wins the game.</p>
+            <div class="playing-box">
+                <div class="move-box">
+                    <div class="move-icon player-icon">
+                        <div id="player-move">?</div>
+                    </div>
+                    <div class="score-result">
+                        <p>You: <span id="player-score">0</span></p>
+                    </div>
+                </div>
+                <div class="move-box">
+                    <div class="move-icon computer-icon">
+                        <div id="computer-move">?</div>
+                    </div>
+                    <div class="score-result">
+                        <p>Computer: <span id="computer-score">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="resultText"></div>
+            <div class="button-container">
+                <button class="move-button" id="rock">Rock</button>
+                <button class="move-button" id="paper">Paper</button>
+                <button class="move-button" id="scissors">Scissors</button>
+            </div>
+            
+        </div>
+    </section>
 
     <script src="rockPaperScissors.js"></script>
 </body>
+
 </html>
