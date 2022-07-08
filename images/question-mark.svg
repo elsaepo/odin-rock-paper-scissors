@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="500pt"
+   height="500pt"
+   version="1.1"
+   viewBox="0 0 500 500"
+   id="svg10"
+   sodipodi:docname="question-mark.svg"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="0.93535714"
+     inkscape:cx="466.13211"
+     inkscape:cy="466.66667"
+     inkscape:window-width="2486"
+     inkscape:window-height="1376"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10">
+    <sodipodi:guide
+       position="-211.68384,251.43184"
+       orientation="0,-1"
+       id="guide16" />
+    <sodipodi:guide
+       position="247.76632,540.09162"
+       orientation="1,0"
+       id="guide18" />
+  </sodipodi:namedview>
+  <g
+     id="g8"
+     transform="translate(-102.23367,-32.082707)">
+    <path
+       d="M 350,486.66 C 236.04,486.66 143.34,393.965 143.34,280 143.34,166.035 236.035,73.34 350,73.34 c 113.965,0 206.66,92.695 206.66,206.66 0,113.965 -92.695,206.66 -206.66,206.66 z m 0,-378.31 c -94.641,0 -171.66,77 -171.66,171.66 0,94.676 77,171.66 171.66,171.66 94.66,0 171.66,-76.98 171.66,-171.66 0,-94.641 -77.016,-171.66 -171.66,-171.66 z"
+       id="path2" />
+    <path
+       d="m 370.93,382.29 c 0,13.539 -10.977,24.516 -24.516,24.516 -13.543,0 -24.52,-10.977 -24.52,-24.516 0,-13.543 10.977,-24.52 24.52,-24.52 13.539,0 24.516,10.977 24.516,24.52"
+       id="path4" />
+    <path
+       d="m 365.66,337.02 h -38.516 v -47.164 l 9.5742,-5.5664 c 36.504,-21.297 52.219,-42.523 48.02,-64.871 -2.2227,-11.863 -7.9961,-20.754 -16.746,-25.742 -8.5391,-4.918 -19.336,-5.8086 -28.805,-2.4336 -16.344,5.8789 -25.883,28.156 -25.934,28.367 l -35.754,-14.281 c 1.5742,-3.9375 16.238,-38.621 48.668,-50.312 20.004,-7.1406 42.754,-5.1992 60.969,5.2344 18.566,10.656 31.168,29.121 35.438,52.062 6.9648,37.188 -12.164,70.613 -56.91,99.398 z"
+       id="path6" />
+  </g>
+</svg>

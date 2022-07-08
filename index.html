@@ -10,13 +10,13 @@
 <body>
     <section id="page-container">
         <div id="game-container">
-            <h1>Rock Paper Scissors</h1>
-            <h2 id="headerText">Choose wisely...</h2>
-            <p id="resultText">First to 5 points wins the game.</p>
+            <h1>ROCK • PAPER • SCISSORS</h1>
+            <h2 id="result-text">Choose wisely...</h2>
+            <p id="result-flavor">First to 5 points wins the game.</p>
             <div class="playing-box">
                 <div class="move-box">
                     <div class="move-icon player-icon">
-                        <div id="player-move">?</div>
+                        <img alt="icons sourced from thenounproject.com" class="image-move" id="player-move" src="images/question-mark.svg">
                     </div>
                     <div class="score-result">
                         <p>You: <span id="player-score">0</span></p>
@@ -24,20 +24,24 @@
                 </div>
                 <div class="move-box">
                     <div class="move-icon computer-icon">
-                        <div id="computer-move">?</div>
+                        <img alt="icons sourced from thenounproject.com" class="image-move" id="computer-move" src="images/question-mark.svg">
                     </div>
                     <div class="score-result">
                         <p>Computer: <span id="computer-score">0</span></p>
                     </div>
                 </div>
             </div>
-            <div id="resultText"></div>
-            <div class="button-container">
-                <button class="move-button" id="rock">Rock</button>
-                <button class="move-button" id="paper">Paper</button>
-                <button class="move-button" id="scissors">Scissors</button>
-            </div>
+        
+        <div class="button-container">
+            <button class="move-button" id="Rock"><img src="images/rock-hand.svg" alt="rock hand. sourced from thenounproject.com"></button>
+            <button class="move-button" id="Paper"><img src="images/paper-hand.svg" alt="paper hand. sourced from thenounproject.com"></button>
+            <button class="move-button" id="Scissors"><img src="images/scissors-hand.svg" alt="scissors hand. sourced from thenounproject.com"></button>
+            <button class="endgame-button" id="endgame-button"><h3>TOTAL VICTORY!</h3></button>
             
+        </div>
+        
+    </div>
+
         </div>
     </section>
 
