@@ -57,6 +57,7 @@ function gameRound(playerSelection, computerSelection){
     playerImage.classList.remove("player-animation");
     computerImage.classList.remove("computer-animation");
 
+    // This line resets the animation by calling the offsetWidth property.
     void playerImage.offsetWidth;
 
     playerImage.classList.add("player-animation");
@@ -65,33 +66,33 @@ function gameRound(playerSelection, computerSelection){
     computerImage.classList.add("image-flip");
     if(playerSelection.toLowerCase() === computerSelection){
         resultText.style.color = "";
-        resultText.innerHTML = `ROUND DRAW`
+        resultText.textContent = `ROUND DRAW`
         playerImageBox.style["background-color"] = defaultBlue;
         computerImageBox.style["background-color"] = defaultBlue;
-        resultFlavor.innerHTML = randomArrayItem(roundDrawArray);
+        resultFlavor.textContent = randomArrayItem(roundDrawArray);
         return "draw";
     } else if (playerSelection === "Rock" && computerSelection === "paper" || playerSelection === "Paper" && computerSelection === "scissors" || playerSelection === "Scissors" && computerSelection === "rock"){
         resultText.style.color = defeatRed;
-        resultText.innerHTML = `ROUND DEFEAT`;
+        resultText.textContent = `ROUND DEFEAT`;
         playerImageBox.style["background-color"] = defaultBlue;
         computerImageBox.style["background-color"] = defaultBlue;
         setTimeout(function(){
             playerImageBox.style["background-color"] = defeatRed;
             computerImageBox.style["background-color"] = victoryGreen;
         }, 100);
-        resultFlavor.innerHTML = randomArrayItem(roundLoseArray);
+        resultFlavor.textContent = randomArrayItem(roundLoseArray);
         computerScore++;
         return "computerVictory";
     } else {
         resultText.style.color = victoryGreen;
-        resultText.innerHTML = `ROUND VICTORY`;
+        resultText.textContent = `ROUND VICTORY`;
         playerImageBox.style["background-color"] = defaultBlue;
         computerImageBox.style["background-color"] = defaultBlue;
         setTimeout(function(){
         playerImageBox.style["background-color"] = victoryGreen;
         computerImageBox.style["background-color"] = defeatRed;
         }, 100);
-        resultFlavor.innerHTML = randomArrayItem(roundWinArray);
+        resultFlavor.textContent = randomArrayItem(roundWinArray);
         playerScore++;
         return "playerVictory";
     }
@@ -99,8 +100,8 @@ function gameRound(playerSelection, computerSelection){
 
 function game(playerMove){
     gameRound(playerMove, computerPlay());
-    playerScoreDiv.innerHTML = playerScore;
-    computerScoreDiv.innerHTML = computerScore;
+    playerScoreDiv.textContent = playerScore;
+    computerScoreDiv.textContent = computerScore;
     if (playerScore >= maxScore || computerScore >= maxScore){
         gameOver();
     }
@@ -117,14 +118,14 @@ function gameOver(){
         endButton.style["background-color"] = victoryGreen;
         endButton.innerHTML = "<h3>TOTAL VICTORY!</h3>";
         resultText.style.color = victoryGreen;
-        resultText.innerHTML = `Congratulations`;
-        resultFlavor.innerHTML = `${finaleString} you're the winner! You're officially smarter than a computer. Tell your friends.`;
+        resultText.textContent = `Congratulations`;
+        resultFlavor.textContent = `${finaleString} you're the winner! You're officially smarter than a computer. Tell your friends.`;
     } else {
         endButton.style["background-color"] = defeatRed;
         endButton.innerHTML = "<h3>COMPLETE DEFEAT</h3>"
         resultText.style.color = defeatRed;
-        resultText.innerHTML = `Oh no...`;
-        resultFlavor.innerHTML = `${finaleString} the computer is the winner. Don't feel too bad, you only lost to a machine that can't think.`;
+        resultText.textContent = `Oh no...`;
+        resultFlavor.textContent = `${finaleString} the computer is the winner. Don't feel too bad, you only lost to a machine that can't think.`;
     }
 }
 
@@ -142,10 +143,10 @@ function gameReset(){
     roundTotal = 0;
     playerScore = 0;
     computerScore = 0;
-    playerScoreDiv.innerHTML = "0";
-    computerScoreDiv.innerHTML = "0";
-    resultText.innerHTML = "Choose wisely..."
-    resultFlavor.innerHTML = "First to 5 points wins the game."
+    playerScoreDiv.textContent = "0";
+    computerScoreDiv.textContent = "0";
+    resultText.textContent = "Choose wisely..."
+    resultFlavor.textContent = "First to 5 points wins the game."
 }
 
 let moveButtonArray = document.querySelectorAll("button.move-button");
